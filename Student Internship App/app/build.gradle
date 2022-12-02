@@ -6,7 +6,7 @@ android {
     buildToolsVersion "30.0.2"
 
     defaultConfig {
-        applicationId "com.example.jobportalapp"
+        applicationId "com.example.ProjectMobile"
         minSdkVersion 16
         targetSdkVersion 30
         multiDexEnabled true

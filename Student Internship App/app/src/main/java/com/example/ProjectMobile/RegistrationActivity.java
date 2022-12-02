@@ -1,4 +1,7 @@
-package com.example.jobportalapp;
+package com.example.ProjectMobile;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
@@ -9,15 +12,12 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
-public class RegistrationActivityAdmin extends AppCompatActivity {
+public class RegistrationActivity extends AppCompatActivity {
 
     private EditText emailReg;
     private EditText passReg;
@@ -38,7 +38,7 @@ public class RegistrationActivityAdmin extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_registration_admin);
+        setContentView(R.layout.activity_registration);
 
         mAuth=FirebaseAuth.getInstance();
 
@@ -90,7 +90,7 @@ public class RegistrationActivityAdmin extends AppCompatActivity {
                         if (task.isSuccessful()){
                             Toast.makeText(getApplicationContext(),"Successful",Toast.LENGTH_SHORT).show();
 
-                            startActivity(new Intent(getApplicationContext(), PostJobActivity.class));
+                            startActivity(new Intent(getApplicationContext(), AllJobActivity.class));
 
                             mDialog.dismiss();
                         } else{

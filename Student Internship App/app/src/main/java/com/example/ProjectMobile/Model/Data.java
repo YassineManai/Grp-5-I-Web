@@ -1,4 +1,4 @@
-package com.example.jobportalapp.Model;
+package com.example.ProjectMobile.Model;
 
 public class Data {
 

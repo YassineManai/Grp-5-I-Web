@@ -1,4 +1,4 @@
-package com.example.jobportalapp;
+package com.example.ProjectMobile;
 
 import org.junit.Test;
 

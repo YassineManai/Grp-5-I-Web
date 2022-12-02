@@ -1,7 +1,4 @@
-package com.example.jobportalapp;
-
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
+package com.example.ProjectMobile;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
@@ -10,15 +7,17 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ProgressBar;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivityAdmin extends AppCompatActivity {
 
     private EditText email;
     private EditText password;
@@ -37,11 +36,11 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main_admin);
 
         mAuth = FirebaseAuth.getInstance();
         if(mAuth.getCurrentUser() != null) {
-            startActivity(new Intent(getApplicationContext(),AllJobActivity.class));
+            startActivity(new Intent(getApplicationContext(),PostJobActivity.class));
         }
 
         mDialog = new ProgressDialog(this);
@@ -86,7 +85,7 @@ public class MainActivity extends AppCompatActivity {
 
                         if(task.isSuccessful()){
                             Toast.makeText(getApplicationContext(),"Successful", Toast.LENGTH_SHORT).show();
-                            startActivity(new Intent(getApplicationContext(),AllJobActivity.class));
+                            startActivity(new Intent(getApplicationContext(),PostJobActivity.class));
 
                             mDialog.dismiss();
                         } else{

@@ -1,4 +1,4 @@
-package com.example.jobportalapp;
+package com.example.ProjectMobile;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -12,7 +12,7 @@ import android.widget.Toast;
 
 import androidx.appcompat.widget.Toolbar;
 
-import com.example.jobportalapp.Model.Data;
+import com.example.ProjectMobile.Model.Data;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;

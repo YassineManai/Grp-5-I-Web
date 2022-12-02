@@ -1,4 +1,4 @@
-package com.example.jobportalapp;
+package com.example.ProjectMobile;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,10 +7,6 @@ import android.os.Bundle;
 import android.widget.TextView;
 
 import androidx.appcompat.widget.Toolbar;
-
-import com.firebase.ui.database.FirebaseIndexArray;
-
-import org.w3c.dom.Text;
 
 public class JobDetailsActivity extends AppCompatActivity {
 

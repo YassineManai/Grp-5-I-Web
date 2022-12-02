@@ -9,7 +9,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:864681360353:android:29444ad7f2398c82fe30a0",
         "android_client_info": {
-          "package_name": "com.example.jobportalapp"
+          "package_name": "com.example.ProjectMobile"
         }
       },
       "oauth_client": [
@@ -17,7 +17,7 @@
           "client_id": "864681360353-6sjia8nkvhi6m78rv0mraf4ctltpn8bv.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.example.jobportalapp",
+            "package_name": "com.example.ProjectMobile",
             "certificate_hash": "6f741e376f3f14e6bff810df4e7db657d8983b93"
           }
         },

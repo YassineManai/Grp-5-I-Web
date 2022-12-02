@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.jobportalapp">
+    package="com.example.ProjectMobile">
 
     <application
         android:allowBackup="true"
@@ -9,21 +9,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".JobDetailsActivity"
-            android:parentActivityName=".AllJobActivity"/>
-        <activity android:name=".InsertJobPostActivity"
-            android:parentActivityName=".PostJobActivity"/>
-        <activity android:name=".PostJobActivity"
-            android:parentActivityName=".MainActivityAdmin"/>
-        <activity android:name=".AllJobActivity"
-            android:parentActivityName=".MainActivity"/>
+        <activity android:name="com.example.ProjectMobile.JobDetailsActivity"
+            android:parentActivityName="com.example.ProjectMobile.AllJobActivity"/>
+        <activity android:name="com.example.ProjectMobile.InsertJobPostActivity"
+            android:parentActivityName="com.example.ProjectMobile.PostJobActivity"/>
+        <activity android:name="com.example.ProjectMobile.PostJobActivity"
+            android:parentActivityName="com.example.ProjectMobile.MainActivityAdmin"/>
+        <activity android:name="com.example.ProjectMobile.AllJobActivity"
+            android:parentActivityName="com.example.ProjectMobile.MainActivity"/>
 
-        <activity android:name=".MainActivity" />
-        <activity android:name=".RegistrationActivity" />
-        <activity android:name=".MainActivityAdmin" />
-        <activity android:name=".RegistrationActivityAdmin" />
+        <activity android:name="com.example.ProjectMobile.MainActivity" />
+        <activity android:name="com.example.ProjectMobile.RegistrationActivity" />
+        <activity android:name="com.example.ProjectMobile.MainActivityAdmin" />
+        <activity android:name="com.example.ProjectMobile.RegistrationActivityAdmin" />
 
-        <activity android:name=".HomeActivity">
+        <activity android:name="com.example.ProjectMobile.HomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
