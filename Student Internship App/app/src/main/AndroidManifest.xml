@@ -4,24 +4,27 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/is"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/is"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.example.ProjectMobile.JobDetailsActivity"
-            android:parentActivityName="com.example.ProjectMobile.AllJobActivity"/>
-        <activity android:name="com.example.ProjectMobile.InsertJobPostActivity"
-            android:parentActivityName="com.example.ProjectMobile.PostJobActivity"/>
-        <activity android:name="com.example.ProjectMobile.PostJobActivity"
-            android:parentActivityName="com.example.ProjectMobile.MainActivityAdmin"/>
-        <activity android:name="com.example.ProjectMobile.AllJobActivity"
+        <activity android:name="com.example.ProjectMobile.IntershipDetails"
+            android:parentActivityName="com.example.ProjectMobile.ViewAllInterships"/>
+        <activity android:name="com.example.ProjectMobile.InsertIntershipPost"
+            android:parentActivityName="com.example.ProjectMobile.IntershipPosted"/>
+        <activity android:name="com.example.ProjectMobile.IntershipPosted"
+            android:parentActivityName="com.example.ProjectMobile.LoginIntershipRecruter"/>
+        <activity android:name="com.example.ProjectMobile.ViewAllInterships"
             android:parentActivityName="com.example.ProjectMobile.MainActivity"/>
+        <activity android:name="com.example.ProjectMobile.UploadActivity"
+            android:parentActivityName="com.example.ProjectMobile.IntershipDetails"/>
 
         <activity android:name="com.example.ProjectMobile.MainActivity" />
-        <activity android:name="com.example.ProjectMobile.RegistrationActivity" />
-        <activity android:name="com.example.ProjectMobile.MainActivityAdmin" />
-        <activity android:name="com.example.ProjectMobile.RegistrationActivityAdmin" />
+        <activity android:name="com.example.ProjectMobile.RegisterIntershipSeeker" />
+        <activity android:name="com.example.ProjectMobile.LoginIntershipRecruter" />
+        <activity android:name="com.example.ProjectMobile.RegisterIntershipRecruter" />
+
 
         <activity android:name="com.example.ProjectMobile.HomeActivity">
             <intent-filter>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_gradient"
+    tools:context=".UploadActivity">
+
+
+    <TextView
+        android:id="@+id/Upload_CV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:text="          Upload CV"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@android:color/black"
+        android:drawableLeft="@drawable/ic_baseline_add_alert_24"
+
+
+
+        />
+
+    <ImageView
+        android:id="@+id/firebaseimage"
+        android:layout_width="match_parent"
+        android:layout_height="419dp"
+        tools:srcCompat="@tools:sample/avatars" />
+    <Button
+        android:id="@+id/selectImagebtn"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Select"
+        android:backgroundTint="@android:color/holo_orange_light"
+        android:textColor="@android:color/white"
+        android:background="@drawable/custom_button"
+        android:textAppearance="?android:textAppearanceMedium"
+        />
+
+    <Button
+        android:id="@+id/uploadimagebtn"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Upload"
+        android:backgroundTint="@android:color/holo_orange_light"
+        android:textColor="@android:color/white"
+        android:background="@drawable/custom_button"
+        android:textAppearance="?android:textAppearanceMedium"
+        />
+</LinearLayout>

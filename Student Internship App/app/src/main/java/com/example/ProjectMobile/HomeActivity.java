@@ -11,8 +11,8 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class HomeActivity extends AppCompatActivity {
 
-    private Button btnAllJob;
-    private Button btnPostJob;
+    private Button btnseeker;
+    private Button btnrecruiter;
 
     //Toolbar
 
@@ -30,11 +30,11 @@ public class HomeActivity extends AppCompatActivity {
         mAuth = FirebaseAuth.getInstance();
 
 
-        btnAllJob = findViewById(R.id.btnseeker);
-        btnPostJob = findViewById(R.id.btnecruiter);
+        btnseeker = findViewById(R.id.btnseeker);
+        btnrecruiter = findViewById(R.id.btnecruiter);
 
 
-        btnAllJob.setOnClickListener(new View.OnClickListener() {
+        btnseeker.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
@@ -43,11 +43,11 @@ public class HomeActivity extends AppCompatActivity {
             }
         });
 
-        btnPostJob.setOnClickListener(new View.OnClickListener() {
+        btnrecruiter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                startActivity(new Intent(getApplicationContext(), MainActivityAdmin.class));
+                startActivity(new Intent(getApplicationContext(), LoginIntershipRecruter.class));
 
             }
         });

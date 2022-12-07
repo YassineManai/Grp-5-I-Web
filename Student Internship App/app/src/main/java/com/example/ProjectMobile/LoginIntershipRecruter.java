@@ -1,8 +1,5 @@
 package com.example.ProjectMobile;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,12 +9,15 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
-public class MainActivity extends AppCompatActivity {
+public class LoginIntershipRecruter extends AppCompatActivity {
 
     private EditText email;
     private EditText password;
@@ -36,13 +36,11 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login_intership_seeker);
+        setContentView(R.layout.activity_login_intership_recruter);
 
         mAuth = FirebaseAuth.getInstance();
-
-        // Yo93ed connecté bil fonction hethi
         if(mAuth.getCurrentUser() != null) {
-            startActivity(new Intent(getApplicationContext(), ViewAllInterships.class));
+            startActivity(new Intent(getApplicationContext(), IntershipPosted.class));
         }
 
         mDialog = new ProgressDialog(this);
@@ -81,14 +79,13 @@ public class MainActivity extends AppCompatActivity {
                 mDialog.setMessage("Processing..");
                 mDialog.show();
 
-
                 mAuth.signInWithEmailAndPassword(mEmail,pass).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
 
                         if(task.isSuccessful()){
                             Toast.makeText(getApplicationContext(),"Successful", Toast.LENGTH_SHORT).show();
-                            startActivity(new Intent(getApplicationContext(), ViewAllInterships.class));
+                            startActivity(new Intent(getApplicationContext(), IntershipPosted.class));
 
                             mDialog.dismiss();
                         } else{

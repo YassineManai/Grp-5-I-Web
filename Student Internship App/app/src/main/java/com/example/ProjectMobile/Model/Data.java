@@ -2,10 +2,12 @@ package com.example.ProjectMobile.Model;
 
 public class Data {
 
-    String title;
-    String description;
-    String skills;
-    String salary;
+    String Domain;
+    String level;
+    String Location;
+    String Duration;
+    String Contact;
+
 
     String id;
     String date;
@@ -15,45 +17,54 @@ public class Data {
 
     }
 
-    public Data(String title, String description, String skills, String salary, String id, String date) {
-        this.title = title;
-        this.description = description;
-        this.skills = skills;
-        this.salary = salary;
+    public Data(String Domain, String level, String Location, String Duration, String Contact,String id, String date) {
+        this.Domain = Domain;
+        this.level = level;
+        this.Location = Location;
+        this.Duration = Duration;
+        this.Contact = Contact;
         this.id = id;
         this.date = date;
     }
 
-    public String getTitle() {
-        return title;
+    public String getDomain() {
+        return Domain;
     }
 
-    public void setTitle(String title) {
-        this.title = title;
+    public void setDomain(String domain) {
+        Domain = domain;
     }
 
-    public String getDescription() {
-        return description;
+    public String getLevel() {
+        return level;
     }
 
-    public void setDescription(String description) {
-        this.description = description;
+    public void setLevel(String level) {
+        this.level = level;
     }
 
-    public String getSkills() {
-        return skills;
+    public String getLocation() {
+        return Location;
     }
 
-    public void setSkills(String skills) {
-        this.skills = skills;
+    public void setLocation(String location) {
+        Location = location;
     }
 
-    public String getSalary() {
-        return salary;
+    public String getDuration() {
+        return Duration;
     }
 
-    public void setSalary(String salary) {
-        this.salary = salary;
+    public void setDuration(String duration) {
+        Duration = duration;
+    }
+
+    public String getContact() {
+        return Contact;
+    }
+
+    public void setContact(String contact) {
+        Contact = contact;
     }
 
     public String getId() {

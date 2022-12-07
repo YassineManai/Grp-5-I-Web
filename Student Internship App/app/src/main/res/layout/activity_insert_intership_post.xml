@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InsertIntershipPost"
+    android:orientation="vertical"
+    android:background="@drawable/bg_gradient">
+
+
+
+    <include layout="@layout/toolbar"
+        android:id="@+id/insert_job_toolbar"/>
+    <ScrollView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            >
+
+
+            <ImageView
+
+                android:id="@+id/imageView"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="40dp"
+
+                android:background="@mipmap/intership" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="150dp"
+                android:layout_margin="10dp"
+                android:ems="10"
+                android:hint=" Domain"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:background="@drawable/custom_input"
+                android:padding="12dp"
+                android:drawableStart="@drawable/ic_baseline_work_outline_24"
+                android:id="@+id/Domain"
+                android:drawableLeft="@drawable/ic_baseline_work_outline_24" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="150dp"
+                android:layout_margin="10dp"
+                android:ems="10"
+                android:hint=" Level needed"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:background="@drawable/custom_input"
+                android:padding="12dp"
+                android:drawableStart="@drawable/ic_baseline_star_24"
+                android:id="@+id/exprience"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="150dp"
+                android:layout_margin="10dp"
+                android:ems="10"
+                android:hint="Location"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:background="@drawable/custom_input"
+                android:padding="12dp"
+                android:drawableStart="@drawable/ic_baseline_add_location_24"
+                android:id="@+id/location"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="150dp"
+                android:layout_margin="10dp"
+                android:ems="10"
+                android:hint=" Duration"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:background="@drawable/custom_input"
+                android:padding="12dp"
+                android:drawableStart="@drawable/ic_baseline_calendar_month_24"
+                android:id="@+id/Duration"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="150dp"
+                android:layout_margin="10dp"
+                android:ems="10"
+                android:hint=" Contact"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:background="@drawable/custom_input"
+                android:padding="12dp"
+                android:drawableStart="@drawable/ic_baseline_contact_mail_24"
+                android:id="@+id/Contact"/>
+
+
+
+            <Button
+                android:id="@+id/btnPost"
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Post"
+                android:backgroundTint="@android:color/holo_orange_light"
+                android:textColor="@android:color/white"
+                android:background="@drawable/custom_button"
+                android:textAppearance="?android:textAppearanceMedium"
+                />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+
+</LinearLayout>
