@@ -33,10 +33,13 @@ const Login = () => {
         }
     };
 
+    
+
     return (
         <>
             <div className="login">
                 <div className="loginContainer">
+                <img src="plutotv.png" style={{height:"120px",width:"150px",position:"relative",left:"100px"}} />
 
 
                     <Form onSubmit={handleSubmit}>

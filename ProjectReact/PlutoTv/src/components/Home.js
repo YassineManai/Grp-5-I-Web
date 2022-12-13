@@ -1,11 +1,11 @@
 import React from "react";
 import axios from 'axios'
-import Movie from "./Movie"
-import Youtube from 'react-youtube'
 import { useEffect, useState } from "react"
 import { useNavigate } from "react-router-dom";
 import { useUserAuth } from "../context/UserAuthContext";
 import Footer from "./Footer";
+import Movie from "./Movie"
+import Youtube from 'react-youtube'
 
 
 
